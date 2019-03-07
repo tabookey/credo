@@ -1,0 +1,144 @@
+---------- Forwarded message ---------
+From: Zvi Avraham <zvi@nivertech.com>
+Date: Mon, Mar 4, 2019 at 6:41 PM
+Subject: Re: CREDO Simulation video
+To: Adi Karmon <adi@tabookey.com>
+Cc: Liraz Siri <liraz@tabookey.com>
+
+
+I think, I already explained in the previous mail.
+The directed links from Investors to BPs are credo loans.
+The color of the link tells which phase he credo loan is:
+
+gray - loan not need to due yet
+yellow - grace period
+green - loan repaid (immediately, after grace period or after auction)
+red - the loan is auctioned
+orange - collective responsibility - not implemented
+
+I'll consolidate all the documentation in a single place.
+
+
+On Mon, Mar 4, 2019 at 7:34 PM Adi Karmon <adi@tabookey.com> wrote:
+What are the green lines between investor and bp? When stake is delegated?
+
+
+
+On Mon, Mar 4, 2019, 12:13 Zvi Avraham <zvi@nivertech.com> wrote:
+here is the better video of the simulation, about 1 minute long.
+It shows dynamics of investing capital and making deposits into DCR.
+
+https://youtu.be/4qOFRkm5gtA
+https://www.youtube.com/watch?v=4qOFRkm5gtA
+
+The most important parameters were:
+- investors choose BPs randomly
+- investor1 (the one who's ROI we're measuring) always split credos between 3 BPs at a time
+- credo loan term = 90 days
+- min BP stake = 10000 DAI
+- average annual BP staking rewards = 20% (you can see the actual payout % ones in the video)
+- probability of BP to be slashed per year = 5%  
+ (we have 6 BPs over 3 years ~ 1 slashing happened in the video (1/(3*6) ~ 5%)  - you can see towards the end of the log "BP 214 is slashed. Total stake lost: 50654 DAI, # credo loans recalled: 1"
+
+You can see credos being repaid (in bold). When auctioned DET tokens only partially repay credo - it should trigger collective responsibility which it's not implemented yet.
+
+You can see BPs switching between ACTIVE (yellow block icon) and ACCUMULATING (gray block icon) because they require a minimum BP stake. When the stake is below 10K DAI, BP will stop paying staking rewards until the minimum stake is accumulated. It happens when investors delegate credo loans to BP. When credo loans expire - the BP may switch back to ACCUMULATING.
+You may see sometimes equal stakes b/c investor agents may split their credos equally between several BPs.
+
+The log from the simulation in the video:
+
+CREDO simulation started
+There are 9 investors, 6 BPs and 200 depositors
+Inital RRT set to 100%
+Investors inject capital into DCR
+Depositors make deposits into DCR
+Investors take loans and delegate them to BPs
+BP 212 accumulated stake of 49725 DAI. Switching to ACTIVE - started reward payouts
+BP 210 accumulated stake of 49725 DAI. Switching to ACTIVE - started reward payouts
+BP 213 accumulated stake of 50298 DAI. Switching to ACTIVE - started reward payouts
+BP 211 accumulated stake of 50298 DAI. Switching to ACTIVE - started reward payouts
+BP 214 accumulated stake of 109238 DAI. Switching to ACTIVE - started reward payouts
+BP 209 accumulated stake of 126845 DAI. Switching to ACTIVE - started reward payouts
+Credo (credo 202 214): collateral 2915.44 DET tokens were auctioned - loan fully repaid
+BP 214 stake 5498 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 214 accumulated stake of 96271 DAI. Switching to ACTIVE - started reward payouts
+BP 209 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 209 accumulated stake of 47585 DAI. Switching to ACTIVE - started reward payouts
+Credo (credo 200 210): collateral 1400.11 DET tokens were auctioned - loan fully repaid
+BP 214 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 211 stake 9548 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 211 accumulated stake of 46784 DAI. Switching to ACTIVE - started reward payouts
+BP 214 accumulated stake of 30574 DAI. Switching to ACTIVE - started reward payouts
+BP 209 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 209 accumulated stake of 47585 DAI. Switching to ACTIVE - started reward payouts
+BP 212 stake 2141 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 214 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 214 accumulated stake of 30574 DAI. Switching to ACTIVE - started reward payouts
+BP 213 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 213 accumulated stake of 50298 DAI. Switching to ACTIVE - started reward payouts
+Changing RRT to 90%
+BP 212 accumulated stake of 39067 DAI. Switching to ACTIVE - started reward payouts
+BP 212 stake 98 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 214 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+Changing RRT to 75%
+BP 212 accumulated stake of 152376 DAI. Switching to ACTIVE - started reward payouts
+BP 214 accumulated stake of 32346 DAI. Switching to ACTIVE - started reward payouts
+Credo (credo 205 213): collateral 818.68 DET tokens were auctioned - loan fully repaid
+Credo (credo 201 213): collateral 2222.22 DET tokens were auctioned - loan partially repaid
+BP 214 stake 0 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 214 accumulated stake of 50023 DAI. Switching to ACTIVE - started reward payouts
+BP 214 is slashed. Total stake lost: 50654 DAI, # credo loans recalled: 1
+BP 212 stake 5 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 212 accumulated stake of 14604 DAI. Switching to ACTIVE - started reward payouts
+BP 213 stake 9409 DAI went below min requirement. Switched to ACCUMULATING - no reward payouts
+BP 214 accumulated stake of 143075 DAI. Switching to ACTIVE - started reward payouts
+BP 213 accumulated stake of 69717 DAI. Switching to ACTIVE - started reward payouts
+stopping simulation after 3 yrs
+
+
+
+On Sun, Mar 3, 2019 at 10:24 PM Zvi Avraham <zvi@nivertech.com> wrote:
+It’s similar to what I said, only instead of taking shorter loans first, investors will be taking smaller loans first. IMO it’s still a problem.
+
+On Sun, 3 Mar 2019 at 22:17 Liraz Siri <liraz@tabookey.com> wrote:
+Oh no, they're not locking up the leverage rate. You can take out a tiny loan that makes out your credos on day 1 and then on for example day 100 you can get more credos for the same number of staked DETs without returning the previous tiny loan. So it doesn't matter if you are loaning credos for the short or long term.
+
+On Sun, Mar 3, 2019, 8:10 PM Zvi Avraham <zvi@nivertech.com> wrote:
+Here is the interesting thing I discovered:
+investors have disincentive to take long-term credo loans when RRT is high (i.e. closer to 100%), since they're locking up lower leverage rates.
+One strategy would be to take short-term loans while RRT is high (i.e. low leverage) and then lock up high leverage with long-term credo loan.
+
+The simple solution would be to limit credo loan term to 1 month (the optimal number of days can be found with hyperparameter tuning).
+
+That's one of the reasons of low ROI on the simulation in the video, the other is high BP slashing rates - 5% per year.
+
+
+
+
+On Sun, Mar 3, 2019 at 7:16 PM Zvi Avraham <zvi@nivertech.com> wrote:
+Hi Adi and Liraz,
+
+here is the *unlisted* link to the recorded video - it's 3 minutes long, but it can be played on 2x speed or better downloaded.
+
+https://www.youtube.com/watch?v=Sb0xKVfv_hE
+or
+https://youtu.be/Sb0xKVfv_hE
+
+Notice the NetLogo log in the bottom part of the video - it describes what happens in the simulation.
+The initial parameters are that BPs paying 20% on average with 5% probability to be slashed per year (with adjustment for risk - i.e. higher paying BPs slashed more, while low paying - slashed less.
+
+The directed gray links are credo loans taken by investors and delegated to BPs.
+The yellow links are credos in grace period
+The red links are credos auctioned.
+Th green links - credos repaid.
+
+You can see in the log, when BPs are slashed or credo's collateral auctioned.
+
+Please, let me know if you have any questions.
+
+BR,
+Zvi
+
+
+
+
