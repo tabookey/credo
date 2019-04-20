@@ -1,6 +1,10 @@
 ### CREDO Agent-based Simulation
 
-CREDO (Credit Reserve Economics for Decentralized Organizations) is a new funding model for L2 sidechains. You can learn more about it from this [talk from the recent EthCC conference](https://www.youtube.com/watch?v=l17NjaRV4yk) and from its [whitepaper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
+A decentralized "equity" sustainable funding model for decentralized public infrastructure. This "no utility token" mechanism uses leveraged credit expansion of the staking coin supply within a L2 / dapp to reward bootstrappers and investors. What traditional equity does for corporate legal entities, CREDO decentralized "equity" tokens  for decentralized networks.
+
+CREDO is designed to incentive compatible and have a path to regulatory compliance (passes Howey and Hinman tests)
+
+You can learn more about it from this [talk from the recent EthCC conference](https://www.youtube.com/watch?v=l17NjaRV4yk) and from its [whitepaper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
 
 This repo contains a NetLogo source code with an agent-based model (ABM) for CREDO.
 The video below shows a single run of a simulation (3 years in simulated time):
