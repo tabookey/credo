@@ -2,7 +2,7 @@
 
 A decentralized "equity" sustainable funding model for decentralized public infrastructure. This "no utility token" mechanism uses leveraged credit expansion of the staking coin supply within a Layer 2 network or dapp to reward bootstrappers and investors. This solves for decentralized networks the problem that traditional equity solves for corporate legal entities.
 
-CREDO is designed to incentive compatible and have a path to regulatory compliance (passes Howey and Hinman tests)
+CREDO is designed to incentive compatible and have a path to regulatory compliance by passing the Hower and Hinman test.
 
 You can learn more about it from this [talk from the recent EthCC conference](https://www.youtube.com/watch?v=l17NjaRV4yk) and from its [whitepaper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
 
