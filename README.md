@@ -1,6 +1,6 @@
 ### CREDO Agent-based Simulation
 
-A decentralized "equity" sustainable funding model for decentralized public infrastructure. This "no utility token" mechanism uses leveraged credit expansion of the staking coin supply within a L2 / dapp to reward bootstrappers and investors. What traditional equity does for corporate legal entities, CREDO decentralized "equity" tokens  for decentralized networks.
+A decentralized "equity" sustainable funding model for decentralized public infrastructure. This "no utility token" mechanism uses leveraged credit expansion of the staking coin supply within a L2 / dapp to reward bootstrappers and investors. This solves for decentralized networks the problem that traditional equity solves for corporate legal entities.
 
 CREDO is designed to incentive compatible and have a path to regulatory compliance (passes Howey and Hinman tests)
 
