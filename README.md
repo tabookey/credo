@@ -4,9 +4,9 @@ A decentralized "equity" sustainable funding model for decentralized public infr
 
 CREDO is designed to incentive compatible and have a path to regulatory compliance by passing the Howey test (not benefiting passively from the work of others) and Hinman test (bootstrappers can walk away).
 
-You can learn more about it from this [talk from the recent EthCC conference](https://www.youtube.com/watch?v=l17NjaRV4yk) and from its [whitepaper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
+You can learn more about it from this [talk from the recent EthCC conference](https://www.youtube.com/watch?v=l17NjaRV4yk) and by deep diving into the [paper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
 
-This repo contains a NetLogo source code with an agent-based model (ABM) for CREDO.
+This repo contains a NetLogo source code with an agent-based model for CREDO.
 The video below shows a single run of a simulation (3 years in simulated time):
 
 [![CREDO Simulation](http://img.youtube.com/vi/4qOFRkm5gtA/0.jpg)](https://www.youtube.com/watch?v=4qOFRkm5gtA "CREDO Simulation")
