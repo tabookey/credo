@@ -2,15 +2,19 @@
 
 A decentralized "equity" sustainable funding model for decentralized public infrastructure. This "no utility token" mechanism uses leveraged credit expansion of the staking coin supply within a Layer 2 network or dapp to reward bootstrappers and investors. This solves for decentralized networks the problem that traditional equity solves for corporate legal entities.
 
-CREDO is designed to incentive compatible and have a path to regulatory compliance by passing the Howey test (not benefiting passively from the work of others) and Hinman test (bootstrappers can walk away).
+CREDO is designed to be incentive compatible and have a path to regulatory compliance by passing the Howey test (not benefiting passively from the work of others) and Hinman test (bootstrappers can walk away).
 
-You can learn more about it from this [talk from the recent EthCC conference](https://www.youtube.com/watch?v=l17NjaRV4yk) and by deep diving into the [paper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
+Explanatory materials:
 
-This repo contains a NetLogo source code with an agent-based model for CREDO.
-The video below shows a single run of a simulation (3 years in simulated time):
+1) Best place to start is with the [CoRe (Contributor Reward) staking library](https://github.com/tabookey/CoRe-staking/blob/master/README.md), which is a simplified MVP implementation of CREDO's crypto economics that demonstrates the key principles.
+
+2) Watch a video of the high-level [EthCC talk](https://www.youtube.com/watch?v=l17NjaRV4yk).
+
+3) Read the full [CREDO paper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
+
+This repo contains a NetLogo source code with an agent-based model for CREDO. The video below shows a single run of a simulation (3 years in simulated time):
 
 [![CREDO Simulation](http://img.youtube.com/vi/4qOFRkm5gtA/0.jpg)](https://www.youtube.com/watch?v=4qOFRkm5gtA "CREDO Simulation")
-
 
 How to run
 ==========
