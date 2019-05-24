@@ -1,10 +1,10 @@
-### CREDO: decentralized "equity"
+This repository contains an agent-model simulation of a DPoS layer2 chain using CREDO.
+
+### CREDO is Decentralized "Equity"
 
 Decentralized "equity" solves for global decentralized networks the problem that equity solves for legal corporations, minus the centralization around a legal entity. 
 
 It can be used to reward contributions of all kinds. The trick is a limited form of credit expansion within the micro-economy of a project using CREDO.
-
-This repository contains an agent-model that demonstrates how CREDO would work for a DPoS layer 2 chain. 
 
 CREDO is designed to be incentive compatible and have a path to regulatory compliance by passing the Howey test (not benefiting passively from the work of others) and Hinman test (bootstrappers can walk away).
 
