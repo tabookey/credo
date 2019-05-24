@@ -1,4 +1,8 @@
-This repository contains an agent-model simulation of a DPoS layer2 chain using CREDO.
+### Why?
+
+> "The domino we want to topple is the domino that topples all the others"
+
+How do we unlock billions in *sustainable* private investment for decentralized open source networks?
 
 ### CREDO is Decentralized "Equity"
 
