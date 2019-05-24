@@ -1,6 +1,10 @@
-### CREDO Agent-based Simulation
+### CREDO: decentralized "equity"
 
-A decentralized "equity" sustainable funding model for decentralized public infrastructure. This "no utility token" mechanism uses leveraged credit expansion of the staking coin supply within a Layer 2 network or dapp to reward bootstrappers and investors. This solves for decentralized networks the problem that traditional equity solves for corporate legal entities.
+Decentralized "equity" solves for global decentralized networks the problem that equity solves for legal corporations, minus the centralization around a legal entity. 
+
+It can be used to reward contributions of all kinds. The trick is a limited form of credit expansion within the micro-economy of a project using CREDO.
+
+This repository contains an agent-model that demonstrates how CREDO would work for a DPoS layer 2 chain. 
 
 CREDO is designed to be incentive compatible and have a path to regulatory compliance by passing the Howey test (not benefiting passively from the work of others) and Hinman test (bootstrappers can walk away).
 
@@ -11,6 +15,13 @@ Explanatory materials:
 2) Watch a video of the high-level [EthCC talk](https://www.youtube.com/watch?v=l17NjaRV4yk).
 
 3) Read the full [CREDO paper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
+
+Legal analysis:
+
+1) [Legal memo](https://docs.google.com/document/d/1ZwsWfrXAUzamzZ3PqKcGCrRHHsaWENzDbqic3OM-iGU) by Ziv Keinan
+2) [Token Taxonomy Frameworks](https://medium.com/cryptolawreview/token-taxonomy-frameworks-de968bf2605c) on Crypto Law Review, includes a CREDO case study.
+
+Technical materials:
 
 This repo contains a NetLogo source code with an agent-based model for CREDO. The video below shows a single run of a simulation (3 years in simulated time):
 
