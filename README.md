@@ -21,7 +21,7 @@ CREDO is designed to be incentive compatible and have a path to regulatory compl
 1) [Legal memo](https://docs.google.com/document/d/1ZwsWfrXAUzamzZ3PqKcGCrRHHsaWENzDbqic3OM-iGU) by Ziv Keinan
 2) [Token Taxonomy Frameworks](https://medium.com/cryptolawreview/token-taxonomy-frameworks-de968bf2605c) on Crypto Law Review, includes a CREDO case study.
 
-Technical materials:
+**Technical materials**:
 
 This repo contains a NetLogo source code with an agent-based model for CREDO. The video below shows a single run of a simulation (3 years in simulated time):
 
