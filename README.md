@@ -8,7 +8,7 @@ This repository contains an agent-model that demonstrates how CREDO would work f
 
 CREDO is designed to be incentive compatible and have a path to regulatory compliance by passing the Howey test (not benefiting passively from the work of others) and Hinman test (bootstrappers can walk away).
 
-Explanatory materials:
+*Explanatory materials:*
 
 1) Best place to start is with the [CoRe (Contributor Reward) staking library](https://github.com/tabookey/CoRe-staking/blob/master/README.md), which is a simplified MVP implementation of CREDO's crypto economics that demonstrates the key principles.
 
@@ -16,7 +16,7 @@ Explanatory materials:
 
 3) Read the full [CREDO paper](https://docs.google.com/document/d/18pApYxgNXnKh4gXyendGCTyllDkoijmjzkM1CD86bog/edit?ts=5c6bd8f1).
 
-Legal analysis:
+*Legal analysis:*
 
 1) [Legal memo](https://docs.google.com/document/d/1ZwsWfrXAUzamzZ3PqKcGCrRHHsaWENzDbqic3OM-iGU) by Ziv Keinan
 2) [Token Taxonomy Frameworks](https://medium.com/cryptolawreview/token-taxonomy-frameworks-de968bf2605c) on Crypto Law Review, includes a CREDO case study.
